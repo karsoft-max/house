@@ -1,0 +1,154 @@
+@media (max-width:520px) {
+    .menu-bar {
+        height: 3rem
+    }
+
+
+    .menu-bar ul  {
+        display: none;
+    }
+    
+    .menu-bar .mobile {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .menu-bar .mobile i {
+        color: var(--primary-color);
+        font-size: 1rem;
+        margin: 1rem 1rem;
+    }
+     .menu-bar .mobile i:hover {
+      cursor: pointer;
+     }
+    .header-logo {
+        display: block;
+        margin: 20px 30px;
+}
+    
+  
+    .logo img {
+        width: 30px;
+     }
+    .intro-container {
+    width: 100%;  
+    height: 35vh;
+    } 
+       .intro-text {
+    font-size: 20px;
+    }
+.introsub {
+  font-size: 10px;
+}
+.introselect {
+  position: absolute;
+  top: 50%;
+  height: 1rem;
+  padding: 1px 2px;
+}
+
+select {
+  font-size: 7.5px;
+  margin-left:1px;
+}
+
+.form-select {
+  border: var(--primary-color) 0.2px solid;
+  padding: 1px;
+  width: 90%; 
+}
+
+.form-select2 {
+  border: var(--primary-color) 0.2px solid;
+  padding: 1px 1px;
+  width: 90%;
+}
+
+#formicon1 {
+  top: 70%;
+  font-size: 8px;
+  margin-left: -5px;
+}
+#formicon2 {
+  top: 240%;
+  font-size: 8px;
+  margin-left: -5px; 
+}
+#searchicon {
+  color: var(--body-bg-color);
+  margin: 1px 2px;
+  font-size: 8px;
+}
+
+#bodyh1 {
+  margin: 2rem 3rem;
+  font-size: 2rem;
+  width: 100%;
+}
+.bodymain {
+  flex-direction: column;
+  justify-content: start;
+}
+.bodymain .bodytext {
+  width: 100%;
+}
+
+.bodymain .bodyimg {
+  width: 90%;
+  margin: 1rem 1.5rem;
+}
+.bodymain .bodytext2 {
+  width: 100%;
+}
+
+.bodymain .bodyimg2 {
+  width: 90%;
+  margin: 1rem 1.5rem;
+}
+#bodyh2 {
+  margin: 2rem 3rem;
+  font-size: 2rem;
+  width: 100%;
+}
+#bodyp2 {
+  margin: 2rem 1rem;
+}
+#hover2 {
+  margin: 2rem 3rem;
+}
+#apph1 {
+  font-size: 1.5rem;
+  margin: 2rem 3rem;
+}
+.appP {
+  font-size: 8px;
+  margin: 2rem 3rem;
+}
+.appmain .appimg {
+  width: 60%;
+  margin: 1rem 0.5rem;
+}
+.agentmain .form-container {
+    width: 80%;
+}
+.footer .footer-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  gap: 30px;
+  padding: 20px;
+  background-color: var(--body-bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer-logo {
+   margin: 1rem -2rem;
+}
+.footer-bar .col-1 {
+  margin: 1rem -2rem;
+}
+}
