@@ -38,6 +38,9 @@ body {
   list-style: none;
   display: flex;
 }
+.menu-bar .mobile {
+  display: none;
+}
 
 .menu-bar ul li {
   /* width: 120px; */
@@ -50,7 +53,7 @@ body {
   text-decoration: none;
   transition: all 0.3s;
   color: var(--primary-color);
-   font-size: 16px; /* Initial font size */
+  font-size: 1rem; /* Initial font size */
   transition: font-size 0.3s ease; /* Smooth transition for font size change */
 }
 
@@ -120,15 +123,32 @@ body {
   font-size: 3rem;
   font-weight: bold;
 }
+
+.introsub {
+  position: absolute;
+  color: var(--primary-color);
+  top: 35%;
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.introselect {
+  position: absolute;
+  top: 50%;
+  margin: 0 2rem;
+}
+
 select {
   font-size: 1rem;
+  margin: 0.5rem;
 }
+
 .form-select {
   color: var(--primary-color);
   background-color: var(--body-bg-color);
   border: var(--primary-color) 2px solid;
   padding: 5px;
-  width: 45%;
+  width: 100%; 
 }
 
 .form-select2 {
@@ -136,30 +156,24 @@ select {
   background-color: var(--body-bg-color);
   border: var(--primary-color) 2px solid;
   padding: 5px;
-  width: 45%;
-}
-.form-button {
-  color: black;
-  background-color: var(--body-bg-color);
-  border: none;
-  padding: 5px;
-  width: 15%;
+  width: 100%;
 }
 
-.form-button:hover {
-  cursor: pointer;
-  background-color: var(--secondary-color);
-  color: var(--body-bg-color);
-  border: var(--body-bg-color) 2px solid;
-}
-.fa-solid {
+#formicon1 {
   color: var(--primary-color);
-  position: relative;
-  margin-left: 0.5rem;
+  position: absolute;
+  top: 12%;
 }
+#formicon2 {
+  color: var(--primary-color);
+  position: absolute;
+  top: 45%; 
+}
+
 
 #searchicon {
   color: var(--body-bg-color);
+  margin: 1rem 1rem;
 }
 
 #searchicon:hover {
@@ -205,6 +219,7 @@ select {
 #quickicon {
   font-size: 5rem;
   margin: 2px 2px;
+  color: var(--primary-color);
 }
 
 .quicklinksp {
@@ -236,12 +251,14 @@ select {
   padding: 50px 0;
 }
 
-.bodytext {
+.bodymain .bodytext {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 100%;
+  width: 50%;
 }
+
+
 #bodyh1 {
   position: relative;
   color: var(--primary-color);
@@ -250,11 +267,11 @@ select {
   width: 100%;
 }
 
-.bodyimg {
+.bodymain .bodyimg {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  width: 50%;
+  width: 45%;
   margin: 1rem 3rem;
 }
 
@@ -262,23 +279,24 @@ select {
   border-radius: 5px;
 }
 
-.bodyimg2 {
+.bodymain .bodyimg2 {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 50%;
+  width: 45%;
   margin: 1rem 3rem;
 }
-.bodytext2 {
+.bodymain .bodytext2 {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  width: 100%;
+  width: 50%;
 }
+
 #bodyh2 {
   position: relative;
   color: var(--secondary-color);
-  margin: 2rem -1rem;
+  margin: 2rem 1rem;
   font-size: 3rem;
   width: 100%;
 }
@@ -306,7 +324,6 @@ select {
   font-size: 12px;
   width: 100%;
   margin: 2rem 3rem;
-  
 }
 
 .bodypbutton {
@@ -361,7 +378,7 @@ select {
   background-color: var(--secondary-color);
 }
 
-.apptext {
+.appmain .apptext {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -379,12 +396,12 @@ select {
 .appP {
   position: relative;
   color: var(--body-bg-color);
-  font-size: 16px;
+  font-size: 1rem;
   width: 100%;
   margin: 2rem 6rem;
 }
 
-.appimg {
+.appmain .appimg {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -419,7 +436,7 @@ select {
   font-size: 1rem;
 }
 
-.form-container {
+.agentmain .form-container {
     background-color: var(--primary-color);
     padding: 30px;
     border-radius: 8px;
@@ -471,7 +488,7 @@ button[type="submit"] {
     transition: background-color 0.3s ease;
     right: 0;
     top: 50%; 
-    transform: translateY(-30%); 
+    transform: translateY(-27%); 
 
 }
 
@@ -512,10 +529,15 @@ button[type="submit"]:hover {
 .footer {
  border-top: 3px solid var(--primary-color); /* Add a top border */
  margin: 3rem 2rem;
-  padding: 20px; /* Add some spacing */
+ padding: 20px; /* Add some spacing */
+ display: flex;
+ justify-content: space-between;
+ align-items: start;
+ }
+.footer-logo {
+   margin: 20px 40px;
 }
-
-.footer-bar {
+.footer .footer-bar {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -526,7 +548,7 @@ button[type="submit"]:hover {
   font-weight: 500;
 }
  
-.col-1 {
+.footer-bar .col-1 {
   display: flex;
   flex-direction: column;
   align-items: start;
